@@ -1,0 +1,15 @@
+<色彩選擇>
+https://www.freepik.com/
+https://coolors.co/
+
+<free+paid vectors>
+https://www.freeiconspng.com/
+
+<專題可能會用到的>
+[html2canvas](https://html2canvas.hertzen.com/)
+
+<Registration Email Demo>
+https://www.emailjs.com/
+
+<Payment Request API>
+https://developer.mozilla.org/zh-TW/docs/Web/API/Payment_Request_API

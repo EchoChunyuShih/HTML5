@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>canvas</title>
+    <style>
+      p {
+        border: 1px solid #aaa;
+        width: 300px;
+        height: 300px;
+        font: bold 40px Tahoma;
+
+        text-align: center;
+        line-height: 300px;
+        text-shadow: pink 3px 4px 5px, rgb(34, 0, 128) 6px 8px 20px;
+        /* (color, x, y, blur) default: black*/
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p>Lorem ipsum</p> -->
+    <canvas
+      id="canvas"
+      width="1000px"
+      height="800px"
+      style="border: 1px solid #ccc"
+      >Hopefully you can't see this. if you do, use Google chrome.
+    </canvas>
+    <hr />
+    <!-- <div
+      id="capture"
+      src="../../../網頁設計/exmapleImages/shutterstock_1034721367.jpg.jpg"
+      style="padding: 10px; background: #f5da55"
+    >
+      <h4 style="color: #000">Hello world!</h4>
+    </div> -->
+
+    <script src="13_drawing.js"></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.0/html2canvas.min.js"
+      integrity="sha512-UcDEnmFoMh0dYHu0wGsf5SKB7z7i5j3GuXHCnb3i4s44hfctoLihr896bxM0zL7jGkcHQXXrJsFIL62ehtd6yQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      html2canvas(document.querySelector("#capture")).then((canvas) => {
+        document.body.appendChild(canvas);
+      });
+    </script> -->
+  </body>
+</html>
