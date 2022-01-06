@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jQuery UI -- Draggable</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div style="width: 300px; height: 300px; background: #ccc; margin: 10px">
+      <span id="drag">Drag me</span>
+    </div>
+    <p id="feedback"></p>
+    <!-- Optional JavaScript -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+      integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      //ready 為事件，js物件＋事件＋處理函數
+      $(document).ready(function () {
+        $("#drag").draggable({
+          cursor: "pointer",
+          //axis: x,
+
+          //拖曳範圍限制
+          //containment: 'document',
+          //containment: "window",
+          //   containment: "parent",
+          containment: [0, 0, 300, 300], //[x1, x2, y1, y2]
+
+          //沒人在這樣寫了
+          //   start: function () {},
+          //   drag: function () {},
+          //   stop: function () {},
+
+          start() {
+            $("#feedback").text("drag started");
+          },
+          drag() {
+            $("#feedback").text("dragging");
+          },
+          stop() {
+            $("#feedback").text("drag stopped");
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
