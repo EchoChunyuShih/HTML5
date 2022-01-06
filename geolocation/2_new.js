@@ -2,7 +2,7 @@ function doFirst() {
   //先跟html畫面產生關聯，再建立聆聽事件
   navigator.geolocation.getCurrentPosition(succCallback, errorCallback, {
     enableHighAccuracy: false,
-    timeout: 10,
+    // timeout: 100,
     maximumAge: 0,
   }); //成功處理函數, 失敗處理函數, 訊息(optional)
   //cb function函數包‘函數‘
