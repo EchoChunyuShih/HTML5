@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Storage Access</title>
+    <script src="./new.js"></script>
+  </head>
+  <style>
+    label,
+    button {
+      text-transform: capitalize;
+    }
+    label {
+      width: 70px;
+      float: left;
+    }
+  </style>
+  <body>
+    <p>
+      <label for="keyText"> key </label>
+      <input id="keyText" />
+      <!--input default=text-->
+      <!--label是要描述表單的id值，需同名-->
+    </p>
+    <p>
+      <label for=""> value </label>
+      <input id="valueText" />
+    </p>
+    <button onclick="storageAccess(1)">set item</button>
+    <button onclick="storageAccess(2)">get item</button>
+    <button onclick="storageAccess(3)">remove item</button>
+    <button onclick="storageAccess(4)">clear all</button>
+
+    <script></script>
+  </body>
+</html>
