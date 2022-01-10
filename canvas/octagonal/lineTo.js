@@ -55,7 +55,6 @@ function doFirst() {
   context.lineTo(750, 400);
   context.lineTo(479, 366.9);
   context.lineTo(650, 150);
-
   context.lineTo(435, 320);
   context.closePath();
 
